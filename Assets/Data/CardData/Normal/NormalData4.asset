@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 922a470a9028ec3449fa0ac6def63b5f, type: 3}
+  m_Name: NormalData4
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  cardName: Normal4
+  cardImage: {fileID: -4101167056683434194, guid: dcb00a61109c25a41a8b1ebe0ce4d8bd, type: 3}
+  cardType: 0
+  deathCount: 0
+  initialCount: 6
