@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8356b0cc59ed347e4a7075f4bc1077c4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hpManager: {fileID: 632030410080807475, guid: 2adcd84ec4fe048568e3712ca60e0f2d, type: 3}
+  - drawButton: {fileID: 2890413333786620413, guid: 6569fe182d492486d9366e86462c41b3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
