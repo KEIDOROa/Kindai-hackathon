@@ -1,10 +1,12 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CardData", menuName = "CardGame/Card")]
+
+
+[CreateAssetMenu(fileName = "CardData", menuName = "CardData")]
 public class CardData : ScriptableObject
 {
     public string cardName;
-    public Sprite artwork;
-    public int cost;
-    public string description;
+    public Sprite cardImage;
+    public CardType cardType;
+    public int deathCount = 0;
 }

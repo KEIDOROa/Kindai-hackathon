@@ -1,13 +1,23 @@
-using UnityEngine;
-
-public class Card : MonoBehaviour
+public class Card
 {
     public CardData data;
+    public int currentViewCount = 0;
 
-    public void Initialize(CardData newData)
+    public Card(CardData data)
     {
-        data = newData;
-        // ここでUI更新
-        GetComponent<CardUI>().UpdateUI(data);
+        this.data = data;
+    }
+
+    public bool IsDanger()
+    {
+        // ジョーカーだけ判定する
+        if (data.cardType != CardType.Joker) return false;
+
+        return currentViewCount >= data.deathCount;
+    }
+
+    public void View()
+    {
+        currentViewCount++;
     }
 }
