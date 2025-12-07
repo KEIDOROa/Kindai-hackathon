@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 922a470a9028ec3449fa0ac6def63b5f, type: 3}
-  m_Name: sampleData
+  m_Name: NormalData3
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: sample
-  cardImage: {fileID: 0}
-  cardType: 1
-  deathCount: 3
+  cardName: Normal3
+  cardImage: {fileID: 2283864624416510689, guid: 48c0abf9014a3ea46a0ad079b744764e, type: 3}
+  cardType: 0
+  deathCount: 0
+  initialCount: 6

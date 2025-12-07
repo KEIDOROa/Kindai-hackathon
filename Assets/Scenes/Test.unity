@@ -317,7 +317,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardManager
   cardDatabase:
-  - {fileID: 11400000, guid: 5c67c1ea3f579704ca71e2895011ed72, type: 2}
+  - {fileID: 11400000, guid: 01ec528d9c6cfef42af55b60e9c75758, type: 2}
+  - {fileID: 11400000, guid: aa45b788e087f3142b132bc5f210ad90, type: 2}
+  - {fileID: 11400000, guid: ce244f37512592b4ead113bf6fc9944e, type: 2}
+  - {fileID: 11400000, guid: ba6ac2c44adf65843a46f6dca1a09a9b, type: 2}
+  - {fileID: 11400000, guid: fd005adefaadafe4188046b2013d0380, type: 2}
+  - {fileID: 11400000, guid: a28d59ad7d6e7f8419b1442b9f137e4b, type: 2}
+  - {fileID: 11400000, guid: 4ebeb642f1d64e64eb7ab7091ab5167c, type: 2}
+  - {fileID: 11400000, guid: 0248d4710ad66b848bd0454568d27f6d, type: 2}
+  - {fileID: 11400000, guid: 2eeaad8aada014046b61dea2dab2d419, type: 2}
+  - {fileID: 11400000, guid: 4d3d225b5c39a964bb9885c0bae5f6c0, type: 2}
+  - {fileID: 11400000, guid: 469518f9bb765b34e8fac54b268c3ef2, type: 2}
+  - {fileID: 11400000, guid: d6d3508cb0b97dd4b8b09b8680911842, type: 2}
+  - {fileID: 11400000, guid: ed8436798b4d724428df79cb320ae688, type: 2}
 --- !u!4 &1317412316
 Transform:
   m_ObjectHideFlags: 0
