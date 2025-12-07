@@ -6,8 +6,9 @@ using UnityEngine;
 public class HPManager : MonoBehaviour
 {
     [SerializeField]
-    private int maxHP = 15; // Default max HP
+    private int maxHP = 3; // 3 HP sets as per new design
 
+    [SerializeField]
     private int currentHP;
     private bool isDead = false;
 
@@ -40,6 +41,7 @@ public class HPManager : MonoBehaviour
             OnHPChanged();
         }
     }
+
 
     /// <summary>
     /// Heal the entity.

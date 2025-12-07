@@ -21,9 +21,29 @@ public class HeartDisplay : MonoBehaviour
 
     void Start()
     {
-        if (hpManager == null || heartPrefab == null || heartContainer == null || fullHeartSprite == null || emptyHeartSprite == null)
+        // 必要な参照がすべて設定されているか確認
+        if (hpManager == null)
         {
-            Debug.LogError("HeartDisplay: 必要な参照が設定されていません");
+            Debug.LogError("[HeartDisplay] HPManager が設定されていません。");
+            enabled = false;
+            return;
+        }
+        if (heartPrefab == null)
+        {
+            Debug.LogError("[HeartDisplay] Heart Prefab が設定されていません。");
+            enabled = false;
+            return;
+        }
+        if (heartContainer == null)
+        {
+            Debug.LogError("[HeartDisplay] Heart Container が設定されていません。");
+            enabled = false;
+            return;
+        }
+        if (fullHeartSprite == null || emptyHeartSprite == null)
+        {
+            Debug.LogError("[HeartDisplay] ハート用スプライトが設定されていません。");
+            enabled = false;
             return;
         }
 
@@ -36,7 +56,7 @@ public class HeartDisplay : MonoBehaviour
             Image img = heartObj.GetComponent<Image>();
             if (img == null)
             {
-                Debug.LogError("Heart prefab に Image コンポーネントがありません");
+                Debug.LogError("[HeartDisplay] Heart prefab に Image コンポーネントがありません。");
                 continue;
             }
             img.sprite = fullHeartSprite;
@@ -53,10 +73,18 @@ public class HeartDisplay : MonoBehaviour
 
     private void UpdateHearts()
     {
+        // 安全チェック：heartImages が null の場合は何もしない
         if (heartImages == null) return;
+        
+        // 安全チェック：hpManager が null の場合は何もしない
+        if (hpManager == null) return;
+
         int currentHP = hpManager.CurrentHP;
         for (int i = 0; i < heartImages.Length; i++)
         {
+            // 安全チェック：heartImages[i] が null の場合はスキップ
+            if (heartImages[i] == null) continue;
+            
             heartImages[i].sprite = i < currentHP ? fullHeartSprite : emptyHeartSprite;
         }
     }
